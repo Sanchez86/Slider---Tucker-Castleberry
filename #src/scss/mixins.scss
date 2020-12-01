@@ -1,0 +1,12 @@
+/* Mixins:
+  ========================================================================== */
+//@include font-size(14px);
+@function calculateRem($size) {
+  $remSize: $size / $mainFontSize;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}

@@ -1,0 +1,144 @@
+.d-none{
+  display: none;
+}
+.d-flex{
+  display: flex;
+}
+.d-block{
+  display: block;
+}
+.container{
+  max-width: 1920px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.ml-50{
+  margin-left: 50px;
+}
+.mr-50{
+  margin-right: 50px;
+}
+
+.btn{
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  background: none;
+  width: 172px;
+  height: 50px;
+  text-align: left;
+
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 4px;
+  i{
+    font-style: normal;
+    display: flex;
+    align-items: center;
+  }
+
+  span{
+    margin-right: 10px;
+    font-size: 9px;
+  }
+}
+.btn-1{
+  color: $white;
+
+  &:before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -24px;
+    width: 162px;
+    height: 50px;
+    background-color: $gold;
+    box-shadow: 0 0 11px 8px #e3bf0363;
+    z-index: -1;
+    transition: .3s;
+    @media all and(max-width: 730px){
+      left: -14px;
+    }
+  }
+  &:after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: -34px;
+    width: 162px;
+    height: 50px;
+    background-color: rgba(227, 191, 3, 0.3);
+    z-index: -2;
+    transition: .3s;
+    @media all and(max-width: 730px){
+      left: -24px;
+    }
+  }
+  &:hover{
+    &:before{
+      background-color: $blue;
+      box-shadow: 0 10px 50px #2A6DB6;
+      width: 182px;
+    }
+    &:after{
+      top: 0;
+      left: -24px;
+      width: 182px;
+    }
+  }
+}
+.btn-2{
+  color: $blue;
+  span{
+    font-size: 22px;
+  }
+
+  &:before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -24px;
+    width: 162px;
+    height: 50px;
+    border: 1px solid $blue;
+    z-index: -1;
+    transition: .3s;
+    @media all and(max-width: 730px){
+      left: -14px;
+    }
+  }
+  &:after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: -34px;
+    width: 162px;
+    height: 50px;
+    background-color: rgba(42, 109, 182, 0.2);
+    z-index: -2;
+    transition: .3s;
+    @media all and(max-width: 730px){
+      left: -24px;
+    }
+  }
+  &:hover{
+    &:before{
+      width: 182px;
+    }
+    &:after{
+      top: 0;
+      left: -24px;
+      width: 182px;
+    }
+  }
+}
