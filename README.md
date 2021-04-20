@@ -8,3 +8,5 @@ The slider is based on the Slick slider written in jQuery.
 Functionality
 Arrows to switch slides.
 Slide navigation is added automatically depending on the number of slides.
+
+![alt text](screenshot.png "screenshot.png")
